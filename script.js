@@ -84,6 +84,7 @@ const draw = () => {
     msgCon.classList.remove("hide");
     game.classList.add("hide");
     clear.classList.add("hide");
+    count = 0;
     disableBox();
 }
 
