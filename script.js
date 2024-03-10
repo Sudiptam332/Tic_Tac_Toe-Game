@@ -12,6 +12,7 @@ const winCondition = [
     [6,7,8],
 ]
 
+let count = 0;
 boxs.forEach((box) => {
     box.addEventListener("click", () => {
         if(personX){
@@ -26,7 +27,12 @@ boxs.forEach((box) => {
         }
         box.disabled = true;
 
-        checkWiner();
+        count++;
+        let isWinner = checkWiner();
+
+        if (count === 9 && !isWinner) {
+            draw();
+        }
     });
 });
 
