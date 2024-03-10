@@ -38,7 +38,7 @@ boxs.forEach((box) => {
 
 let found = false;
 const checkWiner = () => {
-    for(stbox of winCondition){
+    for(let stbox of winCondition){
         let b1 = boxs[stbox[0]].innerText;
         let b2 = boxs[stbox[1]].innerText;
         let b3 = boxs[stbox[2]].innerText;
