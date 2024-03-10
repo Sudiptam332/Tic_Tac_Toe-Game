@@ -16,8 +16,8 @@ boxs.forEach((box) => {
     box.addEventListener("click", () => {
         if(personX){
             box.innerText = "X";
-            personX = false;
             box.style.color = "red";
+            personX = false;
         }
         else{
             box.innerText = "O";
