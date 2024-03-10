@@ -84,7 +84,6 @@ const draw = () => {
     msgCon.classList.remove("hide");
     game.classList.add("hide");
     clear.classList.add("hide");
-    count = 0;
     disableBox();
 }
 
@@ -94,6 +93,7 @@ const resetGame = () => {
     msgCon.classList.add("hide");
     game.classList.remove("hide");
     clear.classList.remove("hide");
+    count = 0;
 }
 
 newGame.addEventListener("click", resetGame);
