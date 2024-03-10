@@ -21,6 +21,7 @@ boxs.forEach((box) => {
         }
         else{
             box.innerText = "O";
+            box.style.color = "black";
             personX = true;
         }
         box.disabled = true;
