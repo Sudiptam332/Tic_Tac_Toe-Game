@@ -73,10 +73,12 @@ const enableBox = () => {
 
 const showWiner = (w) => {
     msg.innerText = `Congratulations, '${w}' Win, Start a New Game.`;
-    msgCon.classList.remove("hide");
-    game.classList.add("hide");
-    clear.classList.add("hide");
     disableBox();
+    setTimeout(() => {
+        msgCon.classList.remove("hide");
+        game.classList.add("hide");
+        clear.classList.add("hide");
+    }, 1000);
 }
 
 const draw = () => {
