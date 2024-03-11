@@ -36,7 +36,6 @@ boxs.forEach((box) => {
     });
 });
 
-let found = false;
 const checkWiner = () => {
     for(let stbox of winCondition){
         let b1 = boxs[stbox[0]].innerText;
@@ -46,7 +45,7 @@ const checkWiner = () => {
             if(b1 === b2 && b2 === b3){
                 console.log(`win ${b1}`);
                 showWiner(b1);
-                found = true;
+                return true;
             }
         }
     }
